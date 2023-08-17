@@ -17,7 +17,8 @@ body {
 #conteudo {
     padding: 20px;
     margin: auto;
-    width: 60%;
+    width: 80%; /* Increase the width to make the content wider */
+    max-width: 900px; /* Add a maximum width to prevent excessive stretching */
     border-radius: 10px;
     text-align: center;
 }
@@ -41,15 +42,22 @@ button {
     color: white;
     padding: 10px;
     border-radius: 5px;
-    text-align: left; /* Add this line to align text to the left */
-    line-height: 1.5; /* Add some line spacing for readability */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    text-align: left;
+    line-height: 1.5;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    max-height: 60vh;
+    overflow-y: auto;
+    width: 100%; /* Adjust the width of the text container */
+    margin-left: auto; /* Center the text container horizontally */
+    margin-right: auto;
 }
 
 #botaoRedirecionar {
     margin-top: 10px;
     display: none;
 }
+
 </style>
 <script>
 function iniciarAudio() {
